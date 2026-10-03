@@ -2,12 +2,484 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>JORD BUILD</title>
-  <!-- Le site est dans le dossier docs/ (dossier publié par GitHub Pages). -->
-  <meta http-equiv="refresh" content="0; url=docs/">
-  <link rel="canonical" href="docs/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JORD BUILD — Jordi · Creative &amp; Project Builder | Conakry</title>
+  <meta name="description" content="Jordi (Aboubacar Sidibé), Creative & Project Builder basé à Conakry. Branding, design, communication, événementiel et gestion de projet. Building ideas into impact.">
+  <meta name="theme-color" content="#0A0A0A">
+  <script>document.documentElement.classList.add("js")</script>
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="JORD BUILD">
+  <meta property="og:title" content="JORD BUILD — Jordi · Creative & Project Builder">
+  <meta property="og:description" content="Building ideas into impact. Branding, design, communication, événementiel et gestion de projet — Conakry, Guinée.">
+  <meta property="og:url" content="https://jordbuild.com/">
+  <meta property="og:image" content="https://jordbuild.com/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://jordbuild.com/">
+  <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Geist+Mono:wght@400;500&family=Inter:wght@400;500&family=Montserrat:wght@300;600;700&family=Allura&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preload" as="image" href="assets/img/portrait-1200.webp" type="image/webp">
 </head>
 <body>
-  <p><a href="docs/">Ouvrir le site JORD BUILD</a></p>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- ============ BARRE + MENU PLEIN ÉCRAN ============ -->
+  <header class="bar" id="bar">
+    <a class="bar__brand" href="#top" aria-label="JORD BUILD — retour en haut">
+      <img src="assets/logo/jb-gold.svg" alt="" width="28" height="29">
+      <span class="wordmark"><b>JORD</b> BUILD</span>
+    </a>
+    <div class="bar__right">
+      <a class="bar__cta" href="#contact">Let's build</a>
+      <button class="bar__menu" id="menu-open" aria-expanded="false" aria-controls="menu">
+        <span class="bar__menu-label">Menu</span>
+        <span class="bar__menu-icon" aria-hidden="true"><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+    <div class="menu__inner">
+      <nav aria-label="Navigation principale">
+        <ol class="menu__links">
+          <li><a href="#a-propos"><span>01</span>À propos</a></li>
+          <li><a href="#projets"><span>02</span>Projets</a></li>
+          <li><a href="#services"><span>03</span>Services</a></li>
+          <li><a href="#methode"><span>04</span>Méthode</a></li>
+          <li><a href="#faq"><span>05</span>FAQ</a></li>
+          <li><a href="#contact"><span>06</span>Contact</a></li>
+        </ol>
+      </nav>
+      <div class="menu__aside">
+        <p class="mono">Contact</p>
+        <p><a href="mailto:jordbuild@gmail.com">jordbuild@gmail.com</a></p>
+        <p>WhatsApp <a href="https://wa.me/224627110311" rel="noopener">+224 627 11 03 11</a></p>
+        <p>Conakry, Guinée — et à distance</p>
+        <p class="mono menu__aside-gap">Réseaux</p>
+        <p><a href="https://www.instagram.com/jordbuild/" rel="noopener">Instagram @jordbuild</a></p>
+        <p><a href="https://www.linkedin.com/in/aboubacar-sidib%C3%A9-a9a6b8440" rel="noopener">LinkedIn</a> — Aboubacar Sidibé</p>
+        <p><a href="https://www.upwork.com/freelancers/~01b83dc56125712b55" rel="noopener">Upwork</a> — Jord Build</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ 01 — HERO ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <picture class="hero__bg">
+        <source type="image/webp" srcset="assets/img/portrait-700.webp 700w, assets/img/portrait-1200.webp 1200w" sizes="100vw">
+        <img src="assets/img/portrait-1200.jpg" width="1200" height="1500" alt="Portrait de Jordi (Aboubacar Sidibé), fondateur de JORD BUILD" fetchpriority="high">
+      </picture>
+      <div class="hero__shade" aria-hidden="true"></div>
+
+      <div class="hero__ticker mono" aria-hidden="true">
+        <span class="hero__ticker-track"><span>Imaginer.</span><span>Construire.</span><span>Évoluer.</span><span>Imaginer.</span></span>
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__intro">
+          <img class="hero__mono" src="assets/logo/jb-gold.svg" alt="" width="56" height="58">
+          <h1 class="hero__title" id="hero-title"><span class="wordmark"><b>JORD</b> BUILD</span><span class="hero__role">Creative &amp; Project Builder — Conakry</span></h1>
+          <p class="hero__lead">Je transforme les idées en concepts, expériences et projets concrets.</p>
+          <div class="hero__actions">
+            <a class="link-line" href="#projets">Voir mes projets</a>
+            <a class="link-line link-line--dim" href="#contact">Me contacter</a>
+          </div>
+        </div>
+        <p class="hero__giant" aria-hidden="true">
+          <span class="hero__line">Building ideas</span>
+          <span class="hero__line hero__line--gold">into impact.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 02 — MANIFESTE + CHIFFRES ============ -->
+    <section class="section section--light manifesto" aria-labelledby="manifesto-title">
+      <div class="container">
+        <h2 class="manifesto__text" id="manifesto-title" data-words>Je transforme les idées en projets qui laissent une trace<span class="dot">.</span></h2>
+
+        <div class="manifesto__row">
+          <ul class="stats" id="stats"></ul>
+          <div class="manifesto__side reveal">
+            <p class="mono mono--gold">Imaginer. Construire. Évoluer.</p>
+            <p>Le design sert à communiquer, l'événementiel à exécuter, la gestion de projet à structurer, et la finance apporte la logique stratégique.</p>
+          </div>
+        </div>
+      </div>
+      <div class="marquee marquee--partners" aria-label="Institutions et organisations">
+        <p class="container mono marquee__label">Institutions &amp; organisations</p>
+        <div class="marquee__viewport"><div class="marquee__track" id="partners"></div></div>
+      </div>
+    </section>
+
+    <!-- ============ 03 — À PROPOS ============ -->
+    <section class="section section--light section--flush-top" id="a-propos" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="about__media reveal">
+          <picture>
+            <source type="image/webp" srcset="assets/img/portrait-700.webp">
+            <img src="assets/img/portrait-700.jpg" width="700" height="875" loading="lazy" alt="Jordi, Creative & Project Builder">
+          </picture>
+          <p class="signature" aria-hidden="true">Jordi</p>
+        </div>
+        <div class="about__body">
+          <p class="mono reveal"><span class="num">01</span> — À propos</p>
+          <h2 class="display reveal" id="about-title">Un bâtisseur, <span class="gold">pas un touche&#8209;à&#8209;tout.</span></h2>
+          <p class="lead reveal">Formé en économie avec une concentration en finance, je développe un profil hybride à la croisée de la gestion de projet, de l'événementiel, de la communication et du design graphique.</p>
+          <p class="reveal">Mon expérience dans l'enseignement supérieur et le sport universitaire en Guinée m'a permis de participer à des projets institutionnels et événementiels de grande visibilité. Aujourd'hui, je réunis créativité, stratégie et exécution pour concevoir des projets utiles, structurés et visibles.</p>
+          <dl class="name-box reveal">
+            <div><dt>JORD</dt><dd>Mon identité. En langues scandinaves, « la terre, le sol » : construire depuis la base.</dd></div>
+            <div><dt>BUILD</dt><dd>Ma philosophie : construire.</dd></div>
+          </dl>
+          <p class="mono about__base reveal">Based in Guinea — Working across ideas, projects &amp; experiences.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 — ADN (cartes lumineuses) ============ -->
+    <section class="section section--dark" aria-labelledby="values-title">
+      <div class="container">
+        <div class="head">
+          <div>
+            <p class="mono reveal"><span class="num">02</span> — ADN</p>
+            <h2 class="display reveal" id="values-title">Who is <span class="gold">Jordi?</span></h2>
+          </div>
+          <p class="head__intro reveal">Cinq repères qui guident chaque projet. Allumez-les.</p>
+        </div>
+        <ul class="lcards">
+          <li class="reveal"><article class="lcard is-on">
+            <div class="lcard__icon"><svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M12 25h8M13 28.5h6M16 3.5a8.5 8.5 0 0 0-5 15.4c.9.7 1.5 1.8 1.5 3V22h7v-.1c0-1.2.6-2.3 1.5-3A8.5 8.5 0 0 0 16 3.5Z"/></svg></div>
+            <div class="lcard__bottom"><h3>Créativité</h3>
+              <button class="lcard__toggle" type="button" aria-pressed="true" aria-label="Lumière : Créativité"><span class="lcard__handle"></span><span class="lcard__tip">Éteindre</span></button>
+              <p><span class="mono mono--gold">01</span> Imaginer autrement.</p></div>
+          </article></li>
+          <li class="reveal"><article class="lcard">
+            <div class="lcard__icon"><svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><path d="m2.5 26 9-15 5 8 4-6 9 13Z"/><path d="m9 15.2 2.5 2.3 2.2-2"/></svg></div>
+            <div class="lcard__bottom"><h3>Vision</h3>
+              <button class="lcard__toggle" type="button" aria-pressed="false" aria-label="Lumière : Vision"><span class="lcard__handle"></span><span class="lcard__tip">Allumer</span></button>
+              <p><span class="mono mono--gold">02</span> Voir au-delà du présent.</p></div>
+          </article></li>
+          <li class="reveal"><article class="lcard">
+            <div class="lcard__icon"><svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3.5 27 9.5v13L16 28.5 5 22.5v-13Z"/><path d="M5 9.5 16 15.5 27 9.5M16 15.5v13"/></svg></div>
+            <div class="lcard__bottom"><h3>Construction</h3>
+              <button class="lcard__toggle" type="button" aria-pressed="false" aria-label="Lumière : Construction"><span class="lcard__handle"></span><span class="lcard__tip">Allumer</span></button>
+              <p><span class="mono mono--gold">03</span> Transformer une idée en réalité.</p></div>
+          </article></li>
+          <li class="reveal"><article class="lcard">
+            <div class="lcard__icon"><svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3.5 26.5 7.5v7.8c0 6.2-4.4 11-10.5 13.2C9.9 26.3 5.5 21.5 5.5 15.3V7.5Z"/><path d="m11.5 16 3.2 3.2 6-6.4"/></svg></div>
+            <div class="lcard__bottom"><h3>Caractère</h3>
+              <button class="lcard__toggle" type="button" aria-pressed="false" aria-label="Lumière : Caractère"><span class="lcard__handle"></span><span class="lcard__tip">Allumer</span></button>
+              <p><span class="mono mono--gold">04</span> Discipline, exigence, engagement.</p></div>
+          </article></li>
+          <li class="reveal"><article class="lcard">
+            <div class="lcard__icon"><svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M6 26 26 6M12 6h14v14"/></svg></div>
+            <div class="lcard__bottom"><h3>Évolution</h3>
+              <button class="lcard__toggle" type="button" aria-pressed="false" aria-label="Lumière : Évolution"><span class="lcard__handle"></span><span class="lcard__tip">Allumer</span></button>
+              <p><span class="mono mono--gold">05</span> Apprendre, expérimenter, progresser.</p></div>
+          </article></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 05 — PROJETS (titre collant + révélation diagonale) ============ -->
+    <section class="section section--dark work-section" id="projets" aria-labelledby="work-title">
+      <div class="container work-layout">
+        <div class="work-layout__aside">
+          <div class="work-layout__sticky">
+            <p class="mono"><span class="num">03</span> — Projets</p>
+            <h2 class="display display--xl" id="work-title"><span class="gold">Selected</span> Work</h2>
+            <p class="head__intro">Des projets réels, institutionnels et événementiels, menés en Guinée.</p>
+            <a class="link-line" href="projets.html">Voir tous les projets</a>
+          </div>
+        </div>
+        <!-- Généré depuis data/projects.js -->
+        <ol class="work-list" id="work-list"></ol>
+      </div>
+    </section>
+
+    <!-- ============ 06 — SERVICES (accordéon) ============ -->
+    <section class="section section--dark section--line" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="head">
+          <div>
+            <p class="mono reveal"><span class="num">04</span> — Services</p>
+            <h2 class="display reveal" id="services-title">What I <span class="gold">Build</span></h2>
+          </div>
+          <p class="head__intro reveal">Six domaines, une seule logique : transformer une idée en projet clair, visible et réalisé.</p>
+        </div>
+        <div class="services" id="services-list">
+          <details class="service reveal" open>
+            <summary><span class="mono service__num">01</span><h3>Branding</h3><span class="mono mono--gold service__tags">Identités · Logos · Chartes</span><span class="service__plus" aria-hidden="true"></span></summary>
+            <div class="service__body">
+              <img class="service__img" src="assets/img/projets/village-park-expo/09-habillage-mural.jpg" alt="Habillage mural de l'identité Village Park & Expo" loading="lazy" width="1400" height="1050">
+              <p>Identités visuelles, logos, chartes graphiques : un système clair pour que chaque support parle d'une seule voix.</p>
+            </div>
+          </details>
+          <details class="service reveal">
+            <summary><span class="mono service__num">02</span><h3>Design</h3><span class="mono mono--gold service__tags">Print · Réseaux · Présentations</span><span class="service__plus" aria-hidden="true"></span></summary>
+            <div class="service__body">
+              <img class="service__img" src="assets/img/projets/jug10-2026/12-finale-e-sport.jpg" alt="Visuel de la finale e-sport des JUG10" loading="lazy" width="1400" height="1050">
+              <p>Visuels de communication, supports print et réseaux sociaux, présentations.</p>
+            </div>
+          </details>
+          <details class="service reveal">
+            <summary><span class="mono service__num">03</span><h3>Communication</h3><span class="mono mono--gold service__tags">Institutionnel · Événementiel · Storytelling</span><span class="service__plus" aria-hidden="true"></span></summary>
+            <div class="service__body">
+              <img class="service__img" src="assets/img/projets/jug10-2026/05-conference-de-presse.jpg" alt="Visuel de la conférence de presse des JUG10" loading="lazy" width="1400" height="1050">
+              <p>Communication institutionnelle et événementielle, messages officiels, captions, storytelling.</p>
+            </div>
+          </details>
+          <details class="service reveal">
+            <summary><span class="mono service__num">04</span><h3>Projects</h3><span class="mono mono--gold service__tags">Conception · Structuration · Coordination</span><span class="service__plus" aria-hidden="true"></span></summary>
+            <div class="service__body">
+              <img class="service__img" src="assets/img/projets/village-park-expo/03-programme.jpg" alt="Visuel programme de Village Park & Expo" loading="lazy" width="1400" height="1050">
+              <p>Conception, structuration, cahiers des charges, coordination des parties prenantes.</p>
+            </div>
+          </details>
+          <details class="service reveal">
+            <summary><span class="mono service__num">05</span><h3>Events</h3><span class="mono mono--gold service__tags">Logistique · Délégations · Cérémonies</span><span class="service__plus" aria-hidden="true"></span></summary>
+            <div class="service__body">
+              <img class="service__img" src="assets/img/projets/fgtt-ittf-2026/02-bache-grand-format.jpg" alt="Bâche grand format du championnat ITTF Africa West, Conakry 2026" loading="lazy" width="1400" height="1050">
+              <p>Planification, logistique, accueil des délégations, cérémonies, valorisation des partenaires.</p>
+            </div>
+          </details>
+          <details class="service reveal">
+            <summary><span class="mono service__num">06</span><h3>Culture &amp; Sport</h3><span class="mono mono--gold service__tags">Sport universitaire · Fédérations</span><span class="service__plus" aria-hidden="true"></span></summary>
+            <div class="service__body">
+              <img class="service__img" src="assets/img/projets/jug10-2026/13-village-culturel-danse.jpg" alt="Village culturel des JUG10 : finale du concours de danse" loading="lazy" width="1400" height="1050">
+              <p>Projets du sport universitaire, fédérations, initiatives culturelles.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 07 — MÉTHODE (cartes empilées) ============ -->
+    <section class="section section--light" id="methode" aria-labelledby="method-title">
+      <div class="container">
+        <div class="head">
+          <div>
+            <p class="mono reveal"><span class="num">05</span> — Méthode</p>
+            <h2 class="display reveal" id="method-title">How I <span class="gold">Build</span></h2>
+          </div>
+          <p class="head__intro reveal">De la première conversation au dernier détail : comprendre, créer, construire, faire évoluer.</p>
+        </div>
+        <ol class="stack">
+          <li class="stack__card">
+            <span class="stack__num">01</span>
+            <div class="stack__body">
+              <h3>Think</h3>
+              <p class="stack__lead">Comprendre le problème.</p>
+              <ul class="checks"><li>Écouter le besoin et le contexte</li><li>Identifier les parties prenantes</li><li>Définir les objectifs</li></ul>
+            </div>
+          </li>
+          <li class="stack__card stack__card--dark">
+            <span class="stack__num">02</span>
+            <div class="stack__body">
+              <h3>Create</h3>
+              <p class="stack__lead">Développer l'idée.</p>
+              <ul class="checks"><li>Explorer les pistes</li><li>Poser la direction créative</li><li>Formuler le message</li></ul>
+            </div>
+          </li>
+          <li class="stack__card">
+            <span class="stack__num">03</span>
+            <div class="stack__body">
+              <h3>Build</h3>
+              <p class="stack__lead">Transformer l'idée en projet.</p>
+              <ul class="checks"><li>Structurer et planifier</li><li>Produire les supports</li><li>Coordonner l'exécution</li></ul>
+            </div>
+          </li>
+          <li class="stack__card stack__card--dark">
+            <span class="stack__num">04</span>
+            <div class="stack__body">
+              <h3>Evolve</h3>
+              <p class="stack__lead">Mesurer, apprendre, améliorer.</p>
+              <ul class="checks"><li>Mesurer les résultats</li><li>Tirer les enseignements</li><li>Améliorer la suite</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 08 — FORMULES ============ -->
+    <section class="section section--grey" aria-labelledby="offers-title">
+      <div class="container">
+        <div class="head">
+          <div>
+            <p class="mono reveal"><span class="num">06</span> — Formules</p>
+            <h2 class="display reveal" id="offers-title">Choisir son <span class="gold">format</span></h2>
+          </div>
+          <p class="head__intro reveal">Un besoin précis ou un projet complet : deux façons de travailler ensemble.</p>
+        </div>
+        <!-- Généré depuis data/site.js (offers) -->
+        <div class="offers" id="offers"></div>
+      </div>
+    </section>
+
+    <!-- ============ 09 — FAQ ============ -->
+    <section class="section section--light" id="faq" aria-labelledby="faq-title">
+      <div class="container faq">
+        <div class="faq__head">
+          <p class="mono reveal"><span class="num">07</span> — FAQ</p>
+          <h2 class="display reveal" id="faq-title">Questions, <span class="gold">réponses</span></h2>
+          <p class="head__intro reveal">Ce qu'il est utile de savoir avant de commencer.</p>
+        </div>
+        <div class="faq__list">
+          <details class="qa reveal">
+            <summary><span class="mono">01 —</span> Sur quels types de projets travailles-tu ?<span class="qa__plus" aria-hidden="true"></span></summary>
+            <p>Branding, design, communication, événementiel et gestion de projet — pour des institutions, fédérations sportives, organisateurs d'événements, marques et entreprises.</p>
+          </details>
+          <details class="qa reveal">
+            <summary><span class="mono">02 —</span> Comment démarre un projet ?<span class="qa__plus" aria-hidden="true"></span></summary>
+            <p>Par une conversation. Je cherche d'abord à comprendre le problème, le contexte et les objectifs, avant de proposer une approche.</p>
+          </details>
+          <details class="qa reveal">
+            <summary><span class="mono">03 —</span> Combien de temps dure un projet ?<span class="qa__plus" aria-hidden="true"></span></summary>
+            <p>De 3 à 7 jours pour un projet ciblé. Pour un accompagnement complet, le délai dépend de l'envergure du projet.</p>
+          </details>
+          <details class="qa reveal">
+            <summary><span class="mono">04 —</span> Combien coûte un projet ?<span class="qa__plus" aria-hidden="true"></span></summary>
+            <p>Un projet ciblé démarre à partir de 600 €. Un accompagnement complet démarre à partir de 3 000 €.</p>
+          </details>
+          <details class="qa reveal">
+            <summary><span class="mono">05 —</span> Travailles-tu à distance ?<span class="qa__plus" aria-hidden="true"></span></summary>
+            <p>Oui. Je suis basé à Conakry, en Guinée, et je travaille aussi à distance.</p>
+          </details>
+          <details class="qa reveal">
+            <summary><span class="mono">06 —</span> Que se passe-t-il après le projet ?<span class="qa__plus" aria-hidden="true"></span></summary>
+            <p>Vous recevez les livrables, les fichiers du projet et tous les documents qui s'y rapportent. Je reste disponible pour le suivi.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 10 — VISION ============ -->
+    <section class="vision" aria-labelledby="vision-title">
+      <div class="container">
+        <p class="mono reveal"><span class="num">08</span> — Vision</p>
+        <h2 class="vision__title reveal" id="vision-title">Build <span class="gold">beyond.</span></h2>
+        <p class="vision__text reveal">Je ne veux pas être défini par ce que je sais faire aujourd'hui.<br>
+          Je veux être défini par ce que je suis capable de construire demain.</p>
+      </div>
+    </section>
+
+    <!-- ============ 11 — CONTACT ============ -->
+    <section class="section section--light" id="contact" aria-labelledby="contact-title">
+      <div class="container contact">
+        <div class="contact__intro">
+          <p class="mono reveal"><span class="num">09</span> — Contact</p>
+          <h2 class="display display--xl reveal" id="contact-title">Let's <span class="gold">build.</span></h2>
+          <p class="lead reveal">Un projet, un événement, une idée à construire ? Parlons-en.</p>
+          <ul class="contact__info reveal">
+            <li><span class="mono">Email</span><span><a href="mailto:jordbuild@gmail.com">jordbuild@gmail.com</a></span></li>
+            <li><span class="mono">Téléphone / WhatsApp</span><span><a href="https://wa.me/224627110311" rel="noopener">+224 627 11 03 11</a></span></li>
+            <li><span class="mono">Localisation</span><span>Conakry, Guinée — et à distance</span></li>
+            <li><span class="mono">Réseaux</span><span><a href="https://www.instagram.com/jordbuild/" rel="noopener">Instagram @jordbuild</a> · <a href="https://www.linkedin.com/in/aboubacar-sidib%C3%A9-a9a6b8440" rel="noopener">LinkedIn</a> · <a href="https://www.upwork.com/freelancers/~01b83dc56125712b55" rel="noopener">Upwork</a></span></li>
+          </ul>
+        </div>
+
+        <!-- FormSubmit (https://formsubmit.co) : envoi par email sans compte ni backend.
+             À la toute première soumission, FormSubmit envoie un email d'activation à cette adresse : cliquer sur le lien une seule fois. -->
+        <form class="form reveal" id="contact-form" action="https://formsubmit.co/jordbuild@gmail.com" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="Nouveau message — jordbuild.com">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="field">
+            <label for="f-name">Nom</label>
+            <input id="f-name" name="nom" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <fieldset class="field field--radio">
+            <legend>Type de projet</legend>
+            <!-- Sélecteur à glissière (inspiré d'Uiverse.io, Smit-Prajapati) : ajuster --total-radio si on ajoute une option -->
+            <div class="radio-container" style="--total-radio: 6">
+              <input type="radio" id="t-branding" name="type_de_projet" value="Branding" required>
+              <label for="t-branding">Branding</label>
+              <input type="radio" id="t-design" name="type_de_projet" value="Design">
+              <label for="t-design">Design</label>
+              <input type="radio" id="t-event" name="type_de_projet" value="Événement">
+              <label for="t-event">Événement</label>
+              <input type="radio" id="t-com" name="type_de_projet" value="Communication">
+              <label for="t-com">Communication</label>
+              <input type="radio" id="t-projet" name="type_de_projet" value="Projet">
+              <label for="t-projet">Projet</label>
+              <input type="radio" id="t-autre" name="type_de_projet" value="Autre">
+              <label for="t-autre">Autre</label>
+              <div class="glider-container" aria-hidden="true"><div class="glider"></div></div>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="f-msg">Message</label>
+            <textarea id="f-msg" name="message" rows="5" required></textarea>
+          </div>
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn--dark" type="submit">Envoyer le message <span aria-hidden="true">→</span></button>
+          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="marquee marquee--footer" aria-hidden="true">
+      <div class="marquee__viewport"><div class="marquee__track mono">
+        <span>Branding</span><span>Design</span><span>Communication</span><span>Projects</span><span>Events</span><span>Culture &amp; Sport</span>
+      </div></div>
+    </div>
+    <div class="container footer__grid">
+      <div class="footer__news">
+        <p class="mono">Rester informé</p>
+        <!-- Inscription : envoyée par email via FormSubmit, comme le formulaire de contact -->
+        <form class="news" id="news-form" action="https://formsubmit.co/jordbuild@gmail.com" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="Nouvelle inscription — jordbuild.com">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label class="sr-only" for="n-email">Votre email</label>
+          <input id="n-email" name="email" type="email" placeholder="votre@email.com" autocomplete="email" required>
+          <input type="hidden" name="source" value="newsletter">
+          <button type="submit">S'inscrire</button>
+        </form>
+        <p class="form__status" id="news-status" role="status" aria-live="polite"></p>
+      </div>
+      <ul class="footer__links">
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <ul class="footer__links">
+        <li><a href="https://www.instagram.com/jordbuild/" rel="noopener">Instagram</a></li>
+        <li><a href="https://wa.me/224627110311" rel="noopener">WhatsApp</a></li>
+        <li><a href="mailto:jordbuild@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/aboubacar-sidib%C3%A9-a9a6b8440" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.upwork.com/freelancers/~01b83dc56125712b55" rel="noopener">Upwork</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <p class="footer__giant" aria-hidden="true"><img src="assets/logo/jb-gold.svg" alt="" width="120" height="124" loading="lazy"><span class="wordmark"><b>JORD</b> BUILD</span></p>
+      <div class="footer__bottom">
+        <p>JORD BUILD — Building ideas into impact.</p>
+        <p>© 2026 JORD BUILD. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data/projects.js"></script>
+  <script src="data/site.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
