@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projet — JORD BUILD</title>
+  <meta name="description" content="Étude de cas JORD BUILD — Jordi, Creative & Project Builder basé à Conakry.">
+  <meta name="theme-color" content="#0A0A0A">
+  <script>document.documentElement.classList.add("js")</script>
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="JORD BUILD">
+  <meta property="og:image" content="https://jordbuild.com/assets/img/og-image.jpg">
+  <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Geist+Mono:wght@400;500&family=Inter:wght@400;500&family=Montserrat:wght@300;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="bar" id="bar">
+    <a class="bar__brand" href="index.html" aria-label="JORD BUILD — accueil">
+      <img src="assets/logo/jb-gold.svg" alt="" width="28" height="29">
+      <span class="wordmark"><b>JORD</b> BUILD</span>
+    </a>
+    <div class="bar__right">
+      <a class="bar__cta" href="index.html#contact">Let's build</a>
+      <button class="bar__menu" id="menu-open" aria-expanded="false" aria-controls="menu">
+        <span class="bar__menu-label">Menu</span>
+        <span class="bar__menu-icon" aria-hidden="true"><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+    <div class="menu__inner">
+      <nav aria-label="Navigation principale">
+        <ol class="menu__links">
+          <li><a href="index.html#a-propos"><span>01</span>À propos</a></li>
+          <li><a href="projets.html"><span>02</span>Projets</a></li>
+          <li><a href="index.html#services"><span>03</span>Services</a></li>
+          <li><a href="index.html#methode"><span>04</span>Méthode</a></li>
+          <li><a href="index.html#faq"><span>05</span>FAQ</a></li>
+          <li><a href="index.html#contact"><span>06</span>Contact</a></li>
+        </ol>
+      </nav>
+      <div class="menu__aside">
+        <p class="mono">Contact</p>
+        <p><a href="mailto:jordbuild@gmail.com">jordbuild@gmail.com</a></p>
+        <p>WhatsApp <a href="https://wa.me/224627110311" rel="noopener">+224 627 11 03 11</a></p>
+        <p>Conakry, Guinée — et à distance</p>
+        <p class="mono menu__aside-gap">Réseaux</p>
+        <p><a href="https://www.instagram.com/jordbuild/" rel="noopener">Instagram @jordbuild</a></p>
+        <p><a href="https://www.linkedin.com/in/aboubacar-sidib%C3%A9-a9a6b8440" rel="noopener">LinkedIn</a> — Aboubacar Sidibé</p>
+        <p><a href="https://www.upwork.com/freelancers/~01b83dc56125712b55" rel="noopener">Upwork</a> — Jord Build</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenu généré depuis data/projects.js (voir assets/js/projet.js) -->
+  <main id="main"></main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__giant" aria-hidden="true"><img src="assets/logo/jb-gold.svg" alt="" width="120" height="124" loading="lazy"><span class="wordmark"><b>JORD</b> BUILD</span></p>
+      <div class="footer__bottom">
+        <p>JORD BUILD — Building ideas into impact.</p>
+        <p>© 2026 JORD BUILD. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data/projects.js"></script>
+  <script src="data/site.js"></script>
+  <script src="assets/js/projet.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
